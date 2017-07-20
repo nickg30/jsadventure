@@ -164,8 +164,6 @@ var randomEnemy = function(){
     // level 2 intro
     console.log("-----------------------------------");
     console.log("You've reached level 2!!");
-    console.log("You have emerged from the cold, damp jungle onto warm dry sand. The sun seams welcoming, at first. " +
-                "You look ahead toward an oasis and decide that it must be your next destination.");
     console.log("-----------------------------------");
     isLvl2 = false;
   } else if (player.exp >= 1000 && isLvl2 === false) {
@@ -184,7 +182,7 @@ var randomEnemy = function(){
         currentEnemy = level2.enemies[randomE];
         break;
     default:
-        cconsole.log('something went wrong');
+        console.log('something went wrong');
   }
 }
 randomEnemy();
