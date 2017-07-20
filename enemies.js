@@ -15,11 +15,11 @@ function Enemy(name, hp, maxHp, minDmg, maxDmg, goldDrop, exp) {
   }
 }
 
-var isLvl2 = true;
+var showLvl2Msg = true;
 var randomEnemy = function(){
   currentEnemy = [];
   // check for level
-  if(player.exp >= 1000 && isLvl2 === true) {
+  if(player.exp >= 1000 && showLvl2Msg === true) {
     player.level = 2;
     // level 2 intro
     console.log("-----------------------------------");
@@ -28,7 +28,7 @@ var randomEnemy = function(){
                 "You look ahead toward an oasis and decide that it must be your next destination.");
     console.log("-----------------------------------");
     isLvl2 = false;
-  } else if (player.exp >= 1000 && isLvl2 === false) {
+  } else if (player.exp >= 1000 && showLvl2Msg === false) {
     player.level = 2;
   }
   switch(player.level) {
