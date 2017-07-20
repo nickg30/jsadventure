@@ -5,7 +5,7 @@ function Level() {
   this.potions = [];
   this.enemies = [];
 }
-
+// ADD LEVELS, ITEMS AND ENEMIES
 
 // LEVEL1.JS
 var level1 = new Level();
