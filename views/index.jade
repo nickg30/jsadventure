@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  div#gameTitle
+  div#gameBox
+    div#playerBox
+      div#playerData
+        p Player: 
+          span#playerName
+        p.styled HP:  
+          progress(id="playerHP" value="100" max="100" name="playerHP")
+        p.styledblue MP:  
+          progress(value="100" max="100" id="playerMP")
+        p EXP: 
+          span#playerEXP
+        p GOLD: 
+          span#playerGold
+        button(onclick="player.attack()" id="atkBtn") Attack
+        br
+        button(onclick="player.heal()" id="healBtn") Heal
+       div#playerImg
+        img(src="images/knight.gif")
+       div#enemyImg
+    div#enemyBox
+      div#enemyData
+        p Enemy: 
+          span#enemyName 
+        p.styled HP: 
+          progress(id="enemyHP" value="100" max="100" name="enemyHP")
+    div#logBox
+      div#logData
+        p
+    div#invBox
+      div#inv
+        button(id="invButton") Inventory 
+        div#invData
+    div#storyBox
+      div#jungle
+        // btn onclick change level to 1
+        button(id="jungleBtn") Jungle
+        div#jungleData
+          p You've found yourself in the jungle that is cursed.. You may never find your way out. Maybe if you kill enough of the monsters that plague this jungle, it will let you free.   
+      div#desert
+        // btn onclick change level to 1
+        button(id="desertBtn") Desert
+        div#desertData
+          p You've found yourself in the jungle that is cursed.. You may never find your way out. Maybe if you kill enough of the monsters that plague this jungle, it will let you free.
+    div#shopBox
+      div#shop
+        button(id="shopButton") Shop
+        div#shopData
+  script(src="js/plug.js")

@@ -1,0 +1,129 @@
+body {
+  padding: 50px;
+  color: #404040;
+  background-color: #C1E0F7;
+  /* background-image: url("/images/bg.png"); */
+}
+
+#gameTitle {
+  font-family: 'Rock Salt', cursive;
+  font-size: 40pt !important;
+}
+progress {
+  color: #0FA0CE;
+  font-size: .6em;
+  line-height: 1.5em;
+  text-indent: .5em;
+  width: 15em;
+  height: 1.8em;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.styled progress::-webkit-progress-value {
+  background-color: #CC0000;
+  border-radius: 3px;
+}
+.styled progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 3px;
+}
+.styled progress::-moz-progress-bar {
+  background-color:white;
+  border-radius: 9px;
+}
+.styledblue progress::-webkit-progress-value {
+  background-color: #33C3F0;
+  border-radius: 3px;
+}
+.styledblue progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 3px;
+}
+
+.styledblue progress::-moz-progress-bar {
+  background-color: #33C3F0;
+  border-radius: 3px;
+}
+
+a {
+  color: #33C3F0 !important;
+  text-decoration:none;
+}
+#gameTitle {
+  text-align: center;
+  font-size: 25px;
+}
+#gameBox {
+  margin-top: 100px; 
+}
+#playerBox {
+  float: left;
+  width: 200px;
+}
+#enemyBox {
+  float: right;
+  width: 200px;
+}
+#logBox {
+  text-align: center;
+}
+#invBox {
+  float: left;
+  width: 200px;
+  clear: both;
+}
+#shopBox {
+  float: right;
+  width: 200px;
+  clear: right;
+}
+.greyBtn {
+  background-color: grey;
+  color: white !important;
+}
+#jungleBtn {
+  background-color: forestgreen;
+  border: none;
+  color: white !important;
+  float: left;
+  width: 200px;
+  position: absolute;
+  left: 300px;
+  top: 482px;
+}
+#jungleData {
+  float: left;
+  width: 200px;
+  position: absolute;
+  left: 300px;
+  top: 525px;
+}
+#desertBtn {
+  background-color: orange;
+  border: none;
+  color: white !important;
+  float: left;
+  width: 200px;
+  position: absolute;
+  left: 600px;
+  top: 482px;
+}
+#desertData {
+  float: left;
+  width: 200px;
+  position: absolute;
+  left: 600px;
+  top: 525px;
+}
+#playerImg {
+  float: left;
+  position: absolute;
+  left: 300px;
+  top: 140px;
+}
+#enemyImg {
+  float: left;
+  position: absolute;
+  left: 1000px;
+  top: 130px;
+}
